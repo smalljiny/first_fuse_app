@@ -1,2 +1,7 @@
 <App>
+    <DockPanel>
+        <StatusBarBackground Dock="Top"/>
+        <Panel ux:Name="ToolbarLayout" Height="56" Color="#FF9800" Alignment="Top">
+        </Panel>
+    </DockPanel>
 </App>
