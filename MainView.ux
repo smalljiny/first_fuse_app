@@ -1,2 +1,22 @@
 <App>
+  <Android.StatusBarConfig Color="#F57C00" IsVisible="True"/>
+  <Fuse.iOS.StatusBarConfig ux:Name="statusBarConfig" IsVisible="True" Style="Light"/>
+  <DockPanel>
+    <StatusBarBackground Dock="Top"/>
+    <Panel ux:Name="ToolbarLayout" Height="56" Color="#FF9800" Dock="Top">
+      <Panel Width="56" Height="56" Alignment="Left">
+        <Image ux:Name="HamburgMenu" Height="36" Width="36" Alignment="Center">
+          <MultiDensityImageSource>
+            <FileImageSource Density="0" File="./Assets/drawable-mdpi/ic_menu_white_36dp.png"/>
+            <FileImageSource Density="1" File="./Assets/drawable-hdpi/ic_menu_white_36dp.png"/>
+            <FileImageSource Density="2" File="./Assets/drawable-xhdpi/ic_menu_white_36dp.png"/>
+            <FileImageSource Density="3" File="./Assets/drawable-xxhdpi/ic_menu_white_36dp.png"/>
+            <FileImageSource Density="4" File="./Assets/drawable-xxxhdpi/ic_menu_white_36dp.png"/>
+          </MultiDensityImageSource>
+        </Image>
+      </Panel>
+      <Text Value="First App" X="56" TextColor="White" FontSize="20" Alignment="VerticalCenter"/>
+    </Panel>
+    <Panel ux:Name="ContentLayout" Color="#ECECEC"></Panel>
+  </DockPanel>
 </App>
